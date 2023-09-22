@@ -1,0 +1,12 @@
+res://Inheriable/Basic_enemy.tscn
+res://Inheriable/Basic_enemy.gd
+res://scenes/main.tscn
+res://scenes/Player.tscn
+res://scripts/Player.gd
+res://scenes/bullet.tscn
+res://scenes/bullet.gd
+res://scenes/FSM.gd
+res://scenes/idle.gd
+res://scenes/walk_left.gd
+res://scenes/walk_right.gd
+res://scripts/main.gd

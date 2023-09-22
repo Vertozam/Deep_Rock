@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://dk76o6esdwl67"]
+
+[ext_resource type="PackedScene" uid="uid://igkv7h7gal0h" path="res://scenes/Player.tscn" id="1_m8t13"]
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_u2334"]
+[ext_resource type="Texture2D" uid="uid://lr6gd1c2irtr" path="res://icon.svg" id="3_47pbg"]
+[ext_resource type="PackedScene" uid="uid://dhofekm3jmq8e" path="res://Inheriable/Basic_enemy.tscn" id="4_4n00i"]
+
+[node name="Node2D" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_u2334")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(407, 273)
+texture = ExtResource("3_47pbg")
+
+[node name="Player" parent="." instance=ExtResource("1_m8t13")]
+position = Vector2(303, 270)
+
+[node name="Enemies" type="Node2D" parent="."]
+position = Vector2(445, 74)
+
+[node name="Enemy" parent="Enemies" instance=ExtResource("4_4n00i")]
+position = Vector2(-96, 95)
+
+[node name="Enemy2" parent="Enemies" instance=ExtResource("4_4n00i")]
+position = Vector2(-188, 261)
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+visible = false
+color = Color(0.117647, 0.117647, 0.117647, 1)
