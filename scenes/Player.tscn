@@ -306,4 +306,4 @@ color = Color(0.258824, 0.658824, 0.737255, 1)
 texture = ExtResource("7_p0j06")
 
 [node name="Bullet_spawn_marker" type="Marker2D" parent="."]
-position = Vector2(6, -5)
+position = Vector2(0, -5)
